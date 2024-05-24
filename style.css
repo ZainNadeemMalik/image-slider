@@ -1,0 +1,38 @@
+.slider-item-container > :nth-child(1) {
+  background-color: blue;
+}
+
+.slider-item-container > :nth-child(2) {
+  background-color: red;
+}
+
+.slider-item-container > :nth-child(3) {
+  background-color: yellow;
+} 
+
+.slider-div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  overflow: hidden;
+
+}
+
+.slider-item-container {
+  display: flex;
+  transition: transform 0.5s ease;
+  flex-grow: 1;
+  overflow: hidden;
+  /* width: 100%; */
+}
+
+.button {
+  flex-grow: 0;
+  z-index: 1;
+}
+
+.slider-item {
+  flex: 0 0 100%;
+  height: 200px; 
+  width: 100%;
+}
